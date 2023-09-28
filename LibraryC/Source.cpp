@@ -67,7 +67,7 @@ void main() {
 		}
 	} while (createOrLoad != 2 && createOrLoad != 1);
 
-	//Mode 1 - Read
+	// Read from the file
 	if (createOrLoad == 1)
 	{
 		printf(" * Enter the name of the existing database: ");
@@ -95,7 +95,7 @@ void main() {
 		}
 	}
 
-	//Mode 2 - Write
+	// Write into a file
 	else if (createOrLoad == 2)
 	{
 		printf(" * Enter the name of the new database: ");
@@ -214,7 +214,7 @@ void displayBook(book* libptr, int size)
 		printf("\n == NO BOOKS FOUND WITH NUMBER %d ==\n", search);
 }
 
-//Prompts user to enter a number and searches for & allows for editing the corresponding book's price.
+//user enter a number and searches/edits the corresponding book's price.
 void editBook(book* libptr, int size)
 {
 	int editnum;
@@ -227,7 +227,7 @@ void editBook(book* libptr, int size)
 	{
 		if ((libptr + i)->number == editnum)
 		{
-			//Prompt for edit
+			//Book edit
 			printf(" -> What should the new price of book %d (%s) be?: ", (libptr + i)->number, (libptr + i)->title);
 			scanf("%f", &(libptr + i)->price);
 			printf(" -> New price of book %d is %.2f!\n\n", (libptr + i)->number, (libptr + i)->price);
@@ -235,6 +235,7 @@ void editBook(book* libptr, int size)
 	}
 }
 
+//Saves the book details
 void saveBook(book* libptr, int size)
 {
 	fprintf(fp, "%d\n", size);
