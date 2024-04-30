@@ -5,6 +5,7 @@ The software allows users to add books, view book details, adjust book prices, a
 
 
 #Key characteristics:
+
 Struct Definition:The program creates a book structure with the following attributes: book number, title, author, and price.
 
 File handling: Users can load an existing database or create a new one by reading and writing book data to a text file.
