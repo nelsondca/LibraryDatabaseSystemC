@@ -18,7 +18,6 @@ Users are given a menu from which to select the following actions: show a book, 
 
 
 
-
 #Functions:
 addBook(book* libptr, int size): Allows the user to add a new book to the library, providing book details.
 
