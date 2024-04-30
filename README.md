@@ -1,7 +1,9 @@
 # LibraryC
 
 #Purpose:
+
 The software allows users to add books, view book details, adjust book prices, and save library data to a file, among other actions. It is designed to manage a library of books.
+
 
 
 #Key characteristics:
@@ -16,6 +18,7 @@ Users are given a menu from which to select the following actions: show a book, 
 
 
 
+
 #Functions:
 addBook(book* libptr, int size): Allows the user to add a new book to the library, providing book details.
 
@@ -24,6 +27,7 @@ displayBook(book* libptr, int size): Searches for a book by its number and displ
 editBook(book* libptr, int size): Edits the price of a book by specifying its number.
 
 saveBook(book* libptr, int size): Saves the library data to a file.
+
 
 
 
