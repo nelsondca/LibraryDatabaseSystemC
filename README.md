@@ -28,7 +28,9 @@ saveBook(book* libptr, int size): Saves the library data to a file.
 
 #Flow:
 Users can log in as either a regular user or an admin using a password.
+
 They can choose to create a new library database or load an existing one.
+
 Once in the main menu, users can perform various actions related to book management.
 
 
